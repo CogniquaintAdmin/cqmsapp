@@ -1,5 +1,5 @@
 import frappe
-import datetime
+from datetime import datetime
 import requests
 from cqmsapp.cqmsapp.meetings.templates.invitation_content import generate_content
 from cqmsapp.cqmsapp.meetings.utils.graph_api import get_graph_token
