@@ -1,2 +1,5 @@
 msal
 dotenv
+hashlib
+json
+frappe
