@@ -6,7 +6,7 @@ from cqmsapp.cqmsapp.meetings.utils.audit import notify_misuse
 @frappe.whitelist()
 def create_meeting_for_interview(docname):
     try:
-        doc = frappe.get_doc(docname)
+        doc = frappe.get_doc("Interview", docname)
 
         if doc.doctype != "Interview":
             # Notify misuse
