@@ -1,7 +1,7 @@
 import frappe
-from meetings.providers import teams
-from meetings.utils.signature import generate_meeting_signature
-from meetings.utils.audit import notify_misuse
+from cqmsapp.meetings.providers import teams
+from cqmsapp.meetings.utils.signature import generate_meeting_signature
+from cqmsapp.meetings.utils.audit import notify_misuse
 
 @frappe.whitelist()
 def create_meeting_for_interview(docname):

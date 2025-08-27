@@ -1,8 +1,8 @@
 import frappe
 import datetime
 import requests
-from meetings.templates.invitation_content import generate_content
-from meetings.utils.graph_api import get_graph_token
+from cqmsapp.meetings.templates.invitation_content import generate_content
+from cqmsapp.meetings.utils.graph_api import get_graph_token
 
 def create_event(doc):
     ORGANIZER_EMAIL = frappe.conf.get("ORGANIZER_EMAIL")
