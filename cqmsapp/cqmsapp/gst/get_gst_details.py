@@ -61,12 +61,12 @@ def update_supplier_from_gst(supplier: str, gstin: str):
     if not supplier or not gstin:
         frappe.throw("Supplier and GSTIN are required")
 
+    sup = frappe.get_doc("Supplier", supplier)
+
     gst_response = get_gstin_details(gstin)
 
     if not gst_response.get("success"):
         sup.gst_category = "Unregistered"
-
-    sup = frappe.get_doc("Supplier", supplier)
 
     # ---- Update Supplier Fields ----
     sup.gstin = gst_response.get("gstin")
