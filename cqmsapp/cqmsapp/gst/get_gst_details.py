@@ -13,10 +13,10 @@ def get_gstin_details(gstin: str) -> dict:
     """
     Fetch GSTIN details from GSTINCheck API
     """
-    api_key = frappe.conf.get("gstincheck_api_key") or "ac529be4eb6fed716c067b38bce82044"
+    api_key = frappe.conf.get("gstincheck_api_key")
 
-    if not api_key or api_key == "ac529be4eb6fed716c067b38bce82044":
-        frappe.throw("GSTINCheck API key not configured in site_config.json")
+    if not api_key :
+        api_key="ac529be4eb6fed716c067b38bce82044"
 
     url = f"{GSTINCHECK_BASE_URL}/{api_key}/{gstin}"
 
