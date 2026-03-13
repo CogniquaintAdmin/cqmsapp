@@ -1,8 +1,8 @@
 app_name = "cqmsapp"
-app_title = "cqmsapp"
-app_publisher = "Cogniquaint Admin"
+app_title = "Cogniquaint MS Integration"
+app_publisher = "Cogniquaint Systems Pvt Ltd"
 app_description = "Integration of Microsoft into Cogniquaint People Portal"
-app_email = "info@cogniquaint.com"
+app_email = "contact@cogniquaint.com"
 app_license = "mit"
 
 # Apps
